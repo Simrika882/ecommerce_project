@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Homepage</title>
+  {% load static %}
+  
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Sakura clothing</h1>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <a href="#cart">🛒 Cart</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container">
+      
+      <h2>Discover Your Style</h2>
+      <p>Find the best deals on your favorite products!</p>
+      <a href="#products" class="btn">Shop Now</a>
+      <img src="{% static 'img/sale.jpeg' %}" alt="Image">
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <div class="container">
+      <h2>Featured Products</h2>
+      <div class="product-grid">
+        <div class="product">
+          <img src="{% static 'img/black jacket.jpeg' %} " alt="Black jacket">
+          <h3>Black jacket</h3>
+          <p>Rs.2000</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="{% static 'img/shirt.jpeg' %} " alt="White jacket">
+          <h3>White jacket</h3>
+          <p>Rs.1300</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="{% static 'img/sweatshirt.jpeg' %} " alt="Sweatshirt">
+          <h3>Sweatshirt</h3>
+          <p>Rs.1500</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Sakura clothing. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
